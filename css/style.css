@@ -2469,7 +2469,7 @@ font-weight: 600;
 */
 
 /* The Modal (background) */
-.modal {
+.projectBox {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
@@ -2478,24 +2478,31 @@ font-weight: 600;
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	background-color: #161614; /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
-  .modal-content {
-	background-color: #fefefe;
-	margin: 4% auto; /* 15% from the top and centered */
+  .projectBox-content {
+	margin: 5% auto; /* Center the box vertically and slightly below the top */
 	padding: 20px;
-	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	border: 1px solid #ccc;
+	width: 70%; /* Could be more or less, depending on screen size */
+	height: 550px;
+	max-height: 90vh; /* Restrict the box height to 90% of the viewport height */
+	overflow-y: auto; /* Enable vertical scroll if the content overflows */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a slight shadow for depth */
   }
-  .modal-content h2{
-    margin-top: -80px;
+  .projectBox-content h2{
+	margin-top: 0; /* Remove the default top margin */
+	font-size: 24px; /* Increase the font size for the heading */
+	font-weight: 600; /* Add some boldness to the heading */
+	text-align: center; /* Center the heading */
   }
   .popup-container{
+	margin-top: 30px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Arrange the child boxes in a grid with a minimum width of 300px and maximum equal width */
+	grid-gap: 38px; /* Add some spacing between the child boxes */
   }
   @media only screen and (max-width: 600px) {
 	.popup-container{
@@ -2506,10 +2513,48 @@ font-weight: 600;
   }
  
   .child1 img{
-	height: 210px; 
-	width:400px;
-	margin-right: 20px;
+	display: block; /* Add a block display to the image for consistent alignment */
+	height: auto; /* Allow the image to scale with its width */
+	width: 100%; /* Set the width to 100% of the container */
+	object-fit: cover; /* Crop the image to cover the container while preserving its aspect ratio */
   }
+
+  .socialLinks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .socialLinks ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .socialLinks li {
+	margin: 0 10px;
+  }
+  
+  .socialLinks a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #555;
+	font-size: 1.5rem;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .socialLinks a:hover {
+	color: #DA2558;
+	transform: scale(1.2);
+  }
+  
+  .fa-brands {
+	font-size: 1.2rem;
+	margin-right: 5px;
+  }
+  
   /* The Close Button */
   .close {
 	color: #aaa;
@@ -2520,7 +2565,7 @@ font-weight: 600;
   
   .close:hover,
   .close:focus {
-	color: black;
+	color: #DA2558;
 	text-decoration: none;
 	cursor: pointer;
   }
@@ -2716,4 +2761,49 @@ font-weight: 600;
 	margin-left: 0;
 	}
 	}
-	
+
+	/*project*/
+	#hackathonProj{
+		display: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#personalProj{
+		display: block;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#contributedProj{
+		display: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+	/*project buttons*/
+	.projectButtons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	  }
+	  
+	  .projectButtons button {
+		font-size: 1.1rem;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		background-color: #DA2558;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+	  }
+	  
+	  .projectButtons button:hover {
+		background-color: #fff;
+		color: #DA2558;
+		box-shadow: 0px 0px 10px 0px rgba(218,37,88,0.5);
+	  }
+	  
+	  .projectButtons button:focus {
+		outline: none;
+	  }
+	  
