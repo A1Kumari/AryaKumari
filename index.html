@@ -116,25 +116,17 @@
    I am excited to continue growing my skills and knowledge in 
    the tech industry. With a background in the MERN stack and a 
    keen interest in data analysis, I am always striving to stay 
-   current on the latest technologies and trends. I have experience working
-   on a variety of projects, from developing websites for small businesses 
-   to participating in hackathons and coding competitions. 
+   current on the latest technologies and trends. 
 </p>
 <p>In addition to my web development skills, I am also a
    problem solver at heart and enjoy tackling challenging
     algorithms and data structures. I have experience competing 
     in coding competitions and enjoy participating in online coding 
-    challenges to keep my skills sharp. My love for computer programming
-   also extends to my personal projects, where I enjoy experimenting with 
-   new technologies and building my own applications.
-</p>
-<p>As I continue to develop my skills and knowledge,
+    challenges.
+    As I continue to develop my skills and knowledge,
    I am eager to take on new challenges and opportunities 
-   in the tech industry. Whether it's working on a cutting-edge project
-    or learning a new programming language, I am always eager to 
-    take on new challenges and grow as a developer. I am excited to see where
-   my passion for technology will take me in my career and am determined
-    to make the most of every opportunity that comes my way.</p>
+   in the tech industry.
+</p>
 
 <!--<div class="sign">
 <img src="img/sign/dark.png" alt="" />
@@ -209,7 +201,6 @@
 
 
 
-
 <!-- START TIMELINE AREA -->
 <section id="resume" class="timeline-area section-padding">
   <div class="container">
@@ -277,9 +268,27 @@ past/doing in present.</p>
   <span>Creative Projects</span>
   <h3>Check out my latest projects</h3>
   </div>
+  <div class="lexal_tm_button projectButtons">
+    <button onclick="personal()">Personal Projects</button>
+    <button onclick="hackathons()">Hackathon Projects</button>
+    <button onclick="contributed()">Contributed to</button>
+  </div>
   <div class="lexal_tm_projects_wrap lexal_tm_waypoint_effect">
   <!--<ul class="lexal_tm_portfolio_list">-->
+
+    <div id="personalProj">  
+      <div class="image-container">
+        <div class="image" id="myBtn1"><img id="image" src="personal1.png" alt="worksetimg"></div>
     
+        <div class="image" id="myBtn2"><img id="image" src="personal5 (1).png" alt="worksetimg"></div>
+    
+        <div class="image" id="myBtn3"><img id="image" src="personal3.png" alt="worksetimg"></div>
+    
+      </div>
+    </div>
+
+      
+  <div id="hackathonProj">  
   <div class="image-container">
     <div class="image" id="myBtn1"><img id="image" src="crypto1.jpg" alt="worksetimg"></div>
 
@@ -293,12 +302,46 @@ past/doing in present.</p>
 
     <div class="image" id="myBtn6"><img id="image" src="cryptocurrency2.jpg" alt="worksetimg"></div>
   </div>
-  
+  </div>
+
+    <div id="contributedProj">  
+      <div class="image-container">
+        <div class="image" id="myBtn1"><img id="image" src="contributed1.png" alt="worksetimg"></div>
+    
+        <div class="image" id="myBtn2"><img id="image" src="contributed5.png" alt="worksetimg"></div>
+    
+        <div class="image" id="myBtn3"><img id="image" src="contributed3.png" alt="worksetimg"></div>
+      </div>
+    </div>
+      <script>
+        var project1 = document.getElementById("hackathonProj");
+        var project2 = document.getElementById("contributedProj");
+        var project3 = document.getElementById("personalProj");
+        const hackathons = () => {
+           console.log("hackathonProject");
+           project1.style.display = "block";
+           project2.style.display = "none";
+           project3.style.display = "none";
+        }
+        const contributed = () => {
+           console.log("contributedProject");
+           project2.style.display = "block";
+           project1.style.display = "none";
+           project3.style.display = "none";
+        }
+        const personal = () => {
+           console.log("personalProject");
+           project3.style.display = "block";
+           project2.style.display = "none";
+           project1.style.display = "none";
+        }
+      </script>
+
   <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal" class="projectBox">
 
   <!-- Modal content -->
-  <div class="modal-content"  style="background-color:#000">
+  <div class="projectBox-content"  style="background-color:#000">
     <div style="float:right;"><span class="close">&times;</span></div>
    <h2> Project Title</h2><br><br>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat 
@@ -306,22 +349,26 @@ past/doing in present.</p>
     repudiandae ad officia quis quae id dolores illo.</p>
 <div class="popup-container">
   <div class="child1">
-    <img src="popup.jpg" >
+    <img src="contributed2.png" >
   </div>
   <div class="child2">
-    <strong>date :</strong> 2021-2022<br>
-    <strong>client :</strong> Aryan Kumari<br>
-    <strong>budget : </strong>$100<br>
-    <strong>duration :</strong> 1year<br>
-    <p><strong>Roles and Responsiblities :</strong> Lorem ipsum dolor, sit 
-      amet consectetur adipisicing elit. Eaque cupiditate, qui tempore vitae
-       <br>
+    <h5><strong>Tech Stacks</strong></h5>
+    2021-2022<br>
+    Aryan Kumari<br>
+    $100<br>
+    1year<br>
   </div>
 </div>
+<div class="socialLinks">
+  <ul>
+  <li><a href="https://www.instagram.com/arya_kumari03/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+  <li><a href="https://twitter.com/AryaKumari3953" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/a1kumari/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+  <li><a href="https://github.com/A1Kumari" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+  <!--leetocde and gfg-->
+  </ul>
+  </div>
 <strong></strong>
-<p><strong>Project result and Summary: </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-  Assumenda neque deleniti mollitia facilis fugiat voluptates 
-  pariatur consectetur eum quae asperiores veritatis cupiditate iure nobis vitae odit eos eligendi, temporibus perferendis.</p>
 
   </div>
 
