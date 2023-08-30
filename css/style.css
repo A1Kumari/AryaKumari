@@ -1527,7 +1527,13 @@ img.svg{
 .container .image-container .image:hover img{
 	transform: scale(1.1);
 }
-
+.catchy{
+	text-align: center;
+	width: 60%;
+	
+	padding-top: 50px;
+	margin: auto;
+}
 .container .popup-image{
 	position:fixed;
 	top: 0;
