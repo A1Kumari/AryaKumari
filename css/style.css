@@ -1505,15 +1505,13 @@ img.svg{
 .container .image-container{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
-	justify-content: center;
-	padding: 10px;
+	gap: 25px;
 }
 
 .container .image-container .image{
 	height: 250px;
-	width: 300px;
-	border: 10px solid #fff;
+	width: 270px;
+	border: 5px solid #fff;
 	box-shadow: 0 5px 15px rgba(0,0,0,.1);
 	overflow: hidden;
 	cursor: pointer;
@@ -1529,7 +1527,13 @@ img.svg{
 .container .image-container .image:hover img{
 	transform: scale(1.1);
 }
-
+.catchy{
+	text-align: center;
+	width: 60%;
+	
+	padding-top: 50px;
+	margin: auto;
+}
 .container .popup-image{
 	position:fixed;
 	top: 0;
@@ -2763,7 +2767,7 @@ font-weight: 600;
 	}
 
 	/*project*/
-	#hackathonProj{
+	/* #hackathonProj{
 		display: none;
 		transition: all 0.3s ease-in-out;
 	}
@@ -2777,7 +2781,7 @@ font-weight: 600;
 		display: none;
 		transition: all 0.3s ease-in-out;
 	}
-
+  */
 	/*project buttons*/
 	.projectButtons {
 		display: flex;
