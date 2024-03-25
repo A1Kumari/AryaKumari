@@ -52,7 +52,7 @@
 </div>
 <div class="social">
 <ul>
-<li><a href="https://www.instagram.com/arya_kumari03/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://www.instagram.com/hire_sync/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 <li><a href="https://twitter.com/AryaKumari3953" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
 <li><a href="https://www.linkedin.com/in/a1kumari/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
 <li><a href="https://github.com/A1Kumari" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -211,20 +211,20 @@
           <h4>GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY</h4>
           <span class="active_year">2025</span>
           <span class="active_company">- Bachelor in technology</span>
-          <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p>
+          <!-- <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p> -->
         </div>
         <div class="single_timeline">
           <h4>Pragati Public School</h4>
           <span class="active_year">2021
           </span>
           <span class="active_company">- Higher Secondary Certificate.</span>
-          <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p>
+          <!-- <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p> -->
         </div>
         <div class="single_timeline">
           <h4>Pragati Public School</h4>
           <span class="active_year">2019</span>
           <span class="active_company">-CS Bachelor Degree.</span>
-          <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p>
+          <!-- <p>List all qualifications or degrees you’ve earned or are in progress.List all qualifications or degrees.</p> -->
         </div>
       </div><!--END COL -->
       <div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
@@ -232,19 +232,26 @@
           <h4>Workset</h4>
           <span class="active_year">2015</span>
           <span class="active_company">- Front end Web developer</span>
-          <p>Designed and updated layouts to meet usability and performance requirements.
+          <!-- <p>Designed and updated layouts to meet usability and performance requirements.
             • I developed the font end of many websites from totally scratch and updated or corrected the code for
             many other websites.
             • Coded using HTML, CSS, and JavaScript to develop features for both mobile and desktop platforms.
             • Advocated for well-tested and documented high-quality code.
-            • Performed user experience quality assurance testing to identify and remedy shortcomings.</p>
+            • Performed user experience quality assurance testing to identify and remedy shortcomings.</p> -->
         </div>
         <div class="single_timeline">
           <h4>Easy2Biz</h4>
           <span class="active_year">2018</span>
           <span class="active_company">- Full stack Developer.</span>
-          <p>Here you can add your work summary, which will include the work you have done in
-past/doing in present.</p>
+          <!-- <p>Here you can add your work summary, which will include the work you have done in
+past/doing in present.</p> -->
+        </div>
+        <div class="single_timeline">
+          <h4>Coding Block</h4>
+          <span class="active_year">2024</span>
+          <span class="active_company">- Python Tutor.</span>
+          <!-- <p>Here you can add your work summary, which will include the work you have done in
+past/doing in present.</p> -->
         </div>
         <!--<div class="single_timeline">
           <h4>Upwork.</h4>
@@ -329,36 +336,52 @@ past/doing in present.</p>
 
 <!-- The Modal -->
 <div id="myModal2" class="projectBox">
-
+  <div style="float:right;"><span class="close">&times;</span></div>
   <!-- Modal content -->
-  <div class="projectBox-content"  style="background-color:#000">
+  <div class="projectBox-content" style="background-color:#000">
     <div style="float:right;"><span class="close">&times;</span></div>
-   <h2> modal 2</h2><br><br>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat 
-    commodi animi voluptatum esse eligendi nostrum ea labore, nulla expedita vel vitae 
-    repudiandae ad officia quis quae id dolores illo.</p>
-<div class="popup-container">
-  <div class="child1">
-    <img src="contributed2.png" >
-  </div>
-  <div class="child2">
-    <h5><strong>Tech Stacks</strong></h5>
-    2021-2022<br>
-    Aryan Kumari<br>
-    $100<br>
-    1year<br>
+    <h2> modal 2</h2>
+    
+    <div id="slide" class="sliderPart">
+      <div class="first-content">
+        <!-- 2nd page -->
+        <h5>date on which the project was last updated</h5>
+        <p>info and desp about the projects in point format</p>
+        <p>tech stacks used in the project</p>
+      </div>
+
+      <div class="second-content">
+        <!-- 1st page -->
+        <div class="project-images">
+          <img src="contributed2.png" >
+          <img src="contributed2.png" >
+        </div>
+      </div>
+    </div>
+
+    <div class="socialLinks">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/a1kumari/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+        <li><a href="https://github.com/A1Kumari" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </div>
   </div>
 </div>
-<div class="socialLinks">
-  <ul>
-  <li><a href="https://www.linkedin.com/in/a1kumari/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-  <li><a href="https://github.com/A1Kumari" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-  <!--leetocde and gfg-->
-  </ul>
-  </div>
-<strong></strong>
-</div>
-</div>
+
+
+<script>
+  var section = document.getElementById("slide");
+  var firstContent = section.querySelector(".first-content");
+  var secondContent = section.querySelector(".second-content");
+
+  var timeToSwitch = 30000; // Adjust this time in milliseconds (e.g., 5000 ms = 5 seconds)
+
+  setTimeout(function() {
+    firstContent.style.display = "none";
+    secondContent.style.display = "block";
+  }, timeToSwitch);
+</script>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -574,59 +597,74 @@ currentTestimonial = i;
 <div class="leftpart">
 <ul>
 <li>
-<div class="inner">
+<!-- <div class="inner">
 <span>Ave Street 29, Los Angeles, USA</span>
 <img class="svg" src="img/svg/placeholder.svg" alt="" />
-</div>
+</div> -->
 </li>
 <li>
-<div class="inner">
+<!-- <div class="inner">
 <span>+98 9988775544</span>
 <img class="svg" src="img/svg/telephone.svg" alt="" />
-</div>
+</div> -->
 </li>
 <li>
 <div class="inner">
-<span>example@gmail.com</span>
+<span>aryakumari3954@gmail.com</span>
 <img class="svg" src="img/svg/envelope.svg" alt="" />
 </div>
 </li>
 <li>
-<div class="inner">
+<!-- <div class="inner">
 <span>@twitternickname</span>
 <img class="svg" src="img/svg/twitter.svg" alt="" />
-</div>
+</div> -->
 </li>
 <li>
 <div class="inner">
-<span>@facebooknickname</span>
+<span>@hire_sync</span>
 <img class="svg" src="img/svg/facebook-logo.svg" alt="" />
 </div>
 </li>
 </ul>
 </div>
 <div class="rightpart">
-<div class="contact_list_wrap">
-<form action="/" method="post" class="contact_form" id="contact_form">
-<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-<div class="first_row">
-<div class="first">
-<input id="name" type="text" placeholder="Your Name" />
+  <div class="contact_list_wrap">
+      <form action="/" method="post" class="contact_form" id="contact_form">
+          <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+          <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+          <div class="first_row">
+              <div class="first">
+                  <input id="name" type="text" placeholder="Your Name" />
+              </div>
+              <div class="second">
+                  <input id="email" type="email" placeholder="Your Email" />
+              </div>
+          </div>
+          <div class="second_row">
+              <textarea id="message" placeholder="Your Message"></textarea>
+          </div>
+          <div class="lexal_tm_button">
+              <button id="send_message" type="button"><span>Contact Me</span></button>
+          </div>
+      </form>
+  </div>
 </div>
-<div class="second">
-<input id="email" type="text" placeholder="Your Email" />
 </div>
-</div>
-<div class="second_row">
-<textarea id="message" placeholder="Your Message"></textarea>
-</div>
-<div class="lexal_tm_button">
-<a id="send_message" href="mailto:example@gmail.com"><span>Contact Me</span></a>
-</div>
+<script>
+  document.getElementById('send_message').addEventListener('click', function() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    var subject = 'Message from ' + name;
+    var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+    var mailtoLink = 'mailto:aryakumari2304@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    
+    window.location.href = mailtoLink;
+});
 
-</form>
-</div>
+</script>
 <!--<div class="lexal_tm_button">
   <a id="send_message" href="mailto:example@gmail.com"><span>Contact Me</span></a>
 </div>
@@ -660,9 +698,35 @@ currentTestimonial = i;
       <!--<div style="float: right; margin-right: 20px;">Designed by <a href="https:/workset.in/" style="color: #fff;">Workset</a></div>-->
     </div>
   </div>
+  
 </footer>
 <!-- End Footer -->
 
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+      const form = document.getElementById('contact_form');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+      const successMessage = document.querySelector('.returnmessage');
+      const sendButton = document.getElementById('send_message');
+  
+      form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // Clear form fields
+          nameInput.value = '';
+          emailInput.value = '';
+          messageInput.value = '';
+  
+          // Display success message
+          successMessage.textContent = successMessage.dataset.success;
+  
+          // Send email (you can customize this part as needed)
+          window.location.href = sendButton.getAttribute('href');
+      });
+  });
+  </script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script src="js/plugins.js"></script>

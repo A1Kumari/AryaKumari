@@ -2487,46 +2487,68 @@ font-weight: 600;
   
   /* Modal Content/Box */
   .projectBox-content {
-	margin: 5% auto; /* Center the box vertically and slightly below the top */
+	margin: 10vh auto; /* Center the box vertically and slightly below the top */
 	padding: 20px;
 	border: 1px solid #ccc;
-	width: 70%; /* Could be more or less, depending on screen size */
-	height: 550px;
-	max-height: 90vh; /* Restrict the box height to 90% of the viewport height */
-	overflow-y: auto; /* Enable vertical scroll if the content overflows */
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a slight shadow for depth */
+	width: 80%;
+	max-width: 800px; /* Limit the maximum width of the box */
+	height: auto;
+	max-height: 90vh;
+	overflow-y: auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
-  .projectBox-content h2{
-	margin-top: 0; /* Remove the default top margin */
-	font-size: 24px; /* Increase the font size for the heading */
-	font-weight: 600; /* Add some boldness to the heading */
-	text-align: center; /* Center the heading */
-  }
-  .popup-container{
-	margin-top: 30px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Arrange the child boxes in a grid with a minimum width of 300px and maximum equal width */
-	grid-gap: 38px; /* Add some spacing between the child boxes */
-  }
-  @media only screen and (max-width: 600px) {
-	.popup-container{
-		display: grid;
-		grid-template-columns: none;
-		grid-template-rows: auto auto;
-	  }
-  }
- 
-  .child1 img{
-	display: block; /* Add a block display to the image for consistent alignment */
-	height: auto; /* Allow the image to scale with its width */
-	width: 100%; /* Set the width to 100% of the container */
-	object-fit: cover; /* Crop the image to cover the container while preserving its aspect ratio */
+  .sliderPart{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	animation: fade-in 2s ease-in-out;
   }
 
-  .socialLinks {
+  @keyframes fade-in {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+  .first-content {
+	display: block;
+  }
+  
+  .second-content {
+	display: none;
+  }
+  
+  .projectBox-content h2{
+	margin-top: 0; /* Remove the default top margin */
+	font-size: 28px; /* Increase the font size for the heading */
+	font-weight: 600; /* Add some boldness to the heading */
+	text-align: center; /* Center the heading */
+	margin-bottom: 30px;
+    
+  }
+
+
+.project-images{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 20px;
+	column-gap: 15px;
+
+	margin-top: 20px;
+	padding-top: 40px;
+}
+.project-images img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.socialLinks {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end; /* Align at the bottom */
+	margin-top: 20px;
   }
   
   .socialLinks ul {
@@ -2534,23 +2556,24 @@ font-weight: 600;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
   }
   
   .socialLinks li {
-	margin: 0 10px;
+	margin: 0 15px;
   }
-  
   .socialLinks a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #555;
 	font-size: 1.5rem;
+	text-decoration: none; /* Remove underline */
 	transition: all 0.3s ease-in-out;
   }
   
   .socialLinks a:hover {
-	color: #DA2558;
+	color: #da2558;
 	transform: scale(1.2);
   }
   
@@ -2569,13 +2592,24 @@ font-weight: 600;
   
   .close:hover,
   .close:focus {
-	color: #DA2558;
-	text-decoration: none;
+	color: #da2558;
 	cursor: pointer;
   }
-
-
-
+  .popup-container{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Arrange the child boxes in a grid with a minimum width of 300px and maximum equal width */
+	grid-gap: 38px; /* Add some spacing between the child boxes */
+  }
+  @media only screen and (max-width: 600px) {
+	.popup-container{
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: auto auto;
+	  }
+  }
+ 
+ 
 
 
   /* testimonial */
