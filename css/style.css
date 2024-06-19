@@ -608,147 +608,6 @@ img.svg{
 }
 .lexal_tm_services ul li .inner p{color: #999;}
 
-/*---------------------------------------------------*/
-/*	04) LEXAL PROJECTS
-/*---------------------------------------------------*/
-
-.lexal_tm_projects_wrap.lexal_tm_waypoint_effect.load .lexal_tm_portfolio_list > li{
-	opacity: 1;
-	top: 0px;
-}
-.lexal_tm_projects_wrap{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 80px;
-}
-.lexal_tm_portfolio_list{
-	list-style-type:none;
-	margin: 0px 0px 50px -50px;
-}
-.lexal_tm_portfolio_list > li{
-	width:33.3333%;
-	float:left;
-	position:relative;
-	margin: 0px 0px 50px 0px;
-	padding-left: 50px;
-	top: 30px;
-	opacity: 0;
-	
-	-webkit-transition: all .7s ease;
-	   -moz-transition: all .7s ease;
-	    -ms-transition: all .7s ease;
-	     -o-transition: all .7s ease;
-	        transition: all .7s ease;
-}
-.lexal_tm_portfolio_list .list_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	border-radius: 3px;
-	overflow: hidden;
-}
-.lexal_tm_portfolio_list .list_inner .image_wrap{
-	position: relative;
-	top: 0px;
-}
-.lexal_tm_portfolio_list .list_inner .image_wrap .main_image{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transform: translateZ(0);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.lexal_tm_portfolio_list .list_inner .overlay{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-	background-color: rgba(233,32,79,.92);
-	opacity: 0;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.lexal_tm_portfolio_list .list_inner .overlay_text{
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	z-index: 2;
-	opacity: 0;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.lexal_tm_portfolio_list .list_inner .full_link{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 3;
-}
-.lexal_tm_portfolio_list .list_inner .overlay_text h3{font-size: 22px;}
-.lexal_tm_portfolio_list .list_inner .overlay_text span{font-family: "Saira";}
-.lexal_tm_portfolio_list .list_inner:hover .main_image{transform: scale(1.2,1.2);	}
-.lexal_tm_portfolio_list .list_inner:hover .overlay{opacity: 1;}
-.lexal_tm_portfolio_list .list_inner:hover .overlay_text{opacity: 1;}
-.lexal_tm_load_more{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	text-align: center;
-}
-.lexal_tm_load_more a{
-	text-decoration: none;
-    color: #000;
-    display: inline-block;
-    background-color: #fff;
-    padding: 8px 40px;
-    border-radius: 3px;
-    font-family: "Saira";
-    font-weight: 500;
-    position: relative;
-    overflow: hidden;
-}
-.lexal_tm_load_more a span{color: #000000;}
-.lexal_tm_load_more a span.change{color: #fff;}
-.lexal_tm_load_more .inner{position: relative;}
-.lexal_tm_load_more .svg{
-	width: 55px;
-	height: 55px;
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	opacity: 0;
-}
-.lexal_tm_load_more .svg.animate{opacity: 1;}
-.lexal_tm_load_more.stop a{cursor: crosshair;}
-.lexal_tm_load_more a.opened{color: #fff;}
 
 /*---------------------------------------------------*/
 /*	05) LEXAL NEWS
@@ -2472,376 +2331,106 @@ font-weight: 600;
 * ----------------------------------------------------------------------------------------
 */
 
-/* The Modal (background) */
-.projectBox {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: #161614; /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .projectBox-content {
-	margin: 10vh auto; /* Center the box vertically and slightly below the top */
-	padding: 20px;
-	border: 1px solid #ccc;
-	width: 80%;
-	max-width: 800px; /* Limit the maximum width of the box */
-	height: auto;
-	max-height: 90vh;
-	overflow-y: auto;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  }
-  .sliderPart{
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-	animation: fade-in 2s ease-in-out;
-  }
-
-  @keyframes fade-in {
-	from {
-	  opacity: 0;
-	}
-	to {
-	  opacity: 1;
-	}
-  }
-
-  .first-content {
-	display: block;
-  }
-  
-  .second-content {
-	display: none;
-  }
-  
-  .projectBox-content h2{
-	margin-top: 0; /* Remove the default top margin */
-	font-size: 28px; /* Increase the font size for the heading */
-	font-weight: 600; /* Add some boldness to the heading */
-	text-align: center; /* Center the heading */
-	margin-bottom: 30px;
-    
-  }
 
 
-.project-images{
-	width: 100%;
-	display: grid;
-	grid-template-columns: auto auto;
-	margin-top: 20px;
-	column-gap: 15px;
-
-	margin-top: 20px;
-	padding-top: 40px;
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
-.project-images img {
-	max-width: 100%;
-	height: auto;
-	object-fit: cover;
+
+.row-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
 }
-.socialLinks {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end; /* Align at the bottom */
-	margin-top: 20px;
-  }
-  
-  .socialLinks ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-  }
-  
-  .socialLinks li {
-	margin: 0 15px;
-  }
-  .socialLinks a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #555;
-	font-size: 1.5rem;
-	text-decoration: none; /* Remove underline */
-	transition: all 0.3s ease-in-out;
-  }
-  
-  .socialLinks a:hover {
-	color: #da2558;
-	transform: scale(1.2);
-  }
-  
-  .fa-brands {
-	font-size: 1.2rem;
-	margin-right: 5px;
-  }
-  
-  /* The Close Button */
-  .close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #da2558;
-	cursor: pointer;
-  }
-  .popup-container{
-	margin-top: 30px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Arrange the child boxes in a grid with a minimum width of 300px and maximum equal width */
-	grid-gap: 38px; /* Add some spacing between the child boxes */
-  }
-  @media only screen and (max-width: 600px) {
-	.popup-container{
-		display: grid;
-		grid-template-columns: none;
-		grid-template-rows: auto auto;
-	  }
-  }
- 
- 
+
+#row1 {
+    animation: scroll-right 40s linear infinite;
+}
+
+#row2 {
+    animation: scroll-left 40s linear infinite;
+}
+
+.project-image {
+    flex: none;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 30%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+	border: 7px solid white;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    overflow: hidden;
+    transition: height 0.3s ease; /* Smooth transition for height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-image:hover .overlay2 {
+    height: 100%; /* Expand the overlay on hover */
+}
+
+.overlay-content {
+    text-align: center;
+    color: #fff; /* White text color */
+}
+
+.overlay-content h2 {
+    font-size: 1.5vw; /* Responsive font size */
+   
+}
+
+.icons {
+    font-size: 1.5vw; 
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 5px;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
-  /* testimonial */
-  .testimonial-container{
-	position: relative;
-	width: 500px;
-	min-width: 350px;
-	height: 450px;
-	padding-bottom: 40px;
-	overflow: hidden;
-	
-	margin-left: 30%;
-	}
-	
-	.testimonial-wrapper{
-	width: 300%;
-	/* 300% 'caz we have 3 cards */
-	min-height: 100%;
-	display: flex;
-	justify-content: space-between;
-	transition: 1s;
-	}
-	
-	.card{
-	width: 800px;
-	
-	min-height: 100%;
-	background: #000;
-	border-radius: 20px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-	margin: 0 10px;
-	}
-	
-	.card-thumb{
-	width: 70%;
-	height: 250px;
-	overflow: hidden;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	position: relative;
-	}
-	.review{
-		padding: 10px;
-	}
-	.client-img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	}
-	
-	.client-name{
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-	padding: 5px 20px;
-	background: #000;
-	text-transform: capitalize;
-	font-size: 14px;
-	}
-	
-	.card-body{
-	width: 120%;
-	min-height: 100%;
-	height: auto;
-	margin-left: 20px;
-	position: relative;
-	padding-bottom: 50px;
-	}
-	
-	@media only screen and (max-width: 600px) {
-	
-		.testimonial-container{
-			
-			height: auto;
-			
-			}
-	.testimonial-wrapper{
-	width: 300%;
-	/* 300% 'caz we have 3 cards */
-	min-height: 100%;
-	display: flex;
-	justify-content: space-between;
-	transition: 1s;
-	}
-	
-	.card{
-	width: 500px;
-	
-	min-height: 100%;
-	background: #000;
-	border-radius: 20px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-	margin: 0 10px;
-	}
-	
-	.card-thumb{
-	width: 50%;
-	height: 250px;
-	overflow: hidden;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	position: relative;
-	}
-	
-	
-	
-	.card-body{
-	width: 100%;
-	min-height: 100%;
-	
-	}
-	}
-	.review{
-	font-size: 20px;
-	line-height: 30px;
-	margin-top: 30px;
-	}
-	
-	.rating{
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	}
-	
-	.star{
-	width: 25px;
-	margin-right: 5px;
-	}
-	
-	.indicators{
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	}
-	
-	.indicators button{
-	background: none;
-	border: none;
-	outline: none;
-	width: 10px;
-	height: 15px;
-	border-radius: 500px;
-	border: 2px solid #fff;
-	cursor: pointer;
-	margin-left: 5px;
-	transition: .5s;
-	}
-	
-	button.active{
-	width: 20px;
-	border-radius: 100px;
-	background: #3f3e3e;
-	}
-	
-	@media (max-width: 800px){
-		.client{
-			display: none;
-		}
-	.testimonial-container{
-	width: 50%;
-	margin: auto;
-	}
-	.card{
-	flex-direction: column;
-	}
-	.card-thumb{
-	width: 100%;
-	border-radius: 10px;
-	}
-	.card-body{
-	width: 100%;
-	min-height: auto;
-	margin-left: 0;
-	}
-	}
-
-	/*project*/
-	/* #hackathonProj{
-		display: none;
-		transition: all 0.3s ease-in-out;
-	}
-
-	#personalProj{
-		display: block;
-		transition: all 0.3s ease-in-out;
-	}
-
-	#contributedProj{
-		display: none;
-		transition: all 0.3s ease-in-out;
-	}
-  */
-	/*project buttons*/
-	.projectButtons {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
-	  }
-	  
-	  .projectButtons button {
-		font-size: 1.1rem;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 5px;
-		background-color: #DA2558;
-		color: #fff;
-		cursor: pointer;
-		transition: all 0.3s ease-in-out;
-	  }
-	  
-	  .projectButtons button:hover {
-		background-color: #fff;
-		color: #DA2558;
-		box-shadow: 0px 0px 10px 0px rgba(218,37,88,0.5);
-	  }
-	  
-	  .projectButtons button:focus {
-		outline: none;
-	  }
-	  
+body{
+	background-color: #181717;
+}
