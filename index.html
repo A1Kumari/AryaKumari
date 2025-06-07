@@ -283,7 +283,7 @@
     </div>
     <div class="lexal_tm_services lexal_tm_waypoint_effect">
       <ul>
-        <li>
+        <li onclick="openModal('makeup')">
           <div class="inner">
             <i class="fas fa-code"></i>
             <h3>Virtual Makeup Try-On</h3>
@@ -291,9 +291,11 @@
             <a href="https://github.com/BTANISHA11/beautybuzzz" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">GitHub</a> | 
             <!-- <a href="YOUR_DEMO_LINK" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Demo</a> |  -->
             <a href="https://docs.google.com/document/d/1TEFwU6YIhaaYGJdum0fipM-KO7Fliz2xaAnHBcyBs20/edit?tab=t.0#heading=h.4xu482u6z9qd" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Docs</a>
+            <button class="view-details">View Details</button>
           </div>
         </li>
-        <li>
+
+        <li onclick="openModal('invitree')">
           <div class="inner">
             <i class="fas fa-database"></i>
             <h3>InviTree</h3>
@@ -304,16 +306,17 @@
 
           </div>
         </li>
-        <li>
+        <li onclick="openModal('freelancePortfolio')">
           <div class="inner">
             <i class="fas fa-server"></i>
             <h3>Freelance Portfolio</h3>
             <p>An Express.js and Node.js-powered application for showcasing freelancing projects.</p>
             <a href="https://github.com/A1Kumari/Freelancing" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">GitHub</a> | 
             <a href="https://hiresync-nine.vercel.app/" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Demo</a> 
+            <button class="view-details">View Details</button>
           </div>
         </li>
-        <li>
+        <li onclick="openModal('pack4print')">
           <div class="inner">
             <i class="fab fa-react"></i>
             <h3>Pack4Print</h3>
@@ -324,27 +327,532 @@
 
           </div>
         </li>
-        <!-- <li>
+        <li onclick="openModal('todolist')">
           <div class="inner">
-            <i class="fas fa-plug"></i>
-            <h3>Third-Party Integrations</h3>
-            <p>Seamless integration of third-party services like payment gateways and social media APIs.</p>
+            <i class="fab fa-react"></i>
+            <h3>todo list one</h3>
+            <p>A dynamic and responsive web app for customized packaging solutions built with React.js.</p>
+            <a href="https://github.com/A1Kumari/Pack_4_Print" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">GitHub</a> | 
+            <a href="https://pack4print.netlify.app/" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Demo</a> | 
+            <a href="https://docs.google.com/document/d/1fhWS1JAR1gm3bqRFdOs4PfBEdyEp6IeQ7hSkmuvUtxg/edit?tab=t.0#heading=h.kfqiiq2hz7u0" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Docs</a>
+
           </div>
         </li>
-        <li>
+        <li onclick="openModal('chess')">
           <div class="inner">
-            <i class="fas fa-cloud-upload-alt"></i>
-            <h3>Deployment & Hosting</h3>
-            <p>Deployment of web applications to platforms like AWS and Heroku for live usage.</p>
+            <i class="fab fa-react"></i>
+            <h3>chess</h3>
+            <p>A dynamic and responsive web app for customized packaging solutions built with React.js.</p>
+            <a href="https://github.com/A1Kumari/Pack_4_Print" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">GitHub</a> | 
+            <a href="https://pack4print.netlify.app/" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Demo</a> | 
+            <a href="https://docs.google.com/document/d/1fhWS1JAR1gm3bqRFdOs4PfBEdyEp6IeQ7hSkmuvUtxg/edit?tab=t.0#heading=h.kfqiiq2hz7u0" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Docs</a>
+
           </div>
-        </li> -->
+        </li>
+        <li onclick="openModal('solar')">
+          <div class="inner">
+            <i class="fab fa-react"></i>
+            <h3>solar</h3>
+            <p>A dynamic and responsive web app for customized packaging solutions built with React.js.</p>
+            <a href="https://github.com/A1Kumari/Pack_4_Print" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">GitHub</a> | 
+            <a href="https://pack4print.netlify.app/" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Demo</a> | 
+            <a href="https://docs.google.com/document/d/1fhWS1JAR1gm3bqRFdOs4PfBEdyEp6IeQ7hSkmuvUtxg/edit?tab=t.0#heading=h.kfqiiq2hz7u0" target="_blank" style="color: inherit; text-decoration: none; font-weight: normal;">Docs</a>
+
+          </div>
+        </li>
+
+     <!-- Modal for Virtual Makeup Try-On -->
+    <div id="makeup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">
+    <h2>Virtual Makeup Try-On</h2>
+    <span class="close" onclick="closeModal('makeup')">&times;</span>
+</div>
+
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>BeautyBuzz is an innovative virtual makeup application that leverages computer vision and real-time image processing to allow users to try different makeup looks without physically applying products. The application uses advanced facial recognition algorithms to detect facial landmarks and apply makeup effects in real-time.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time face detection and landmark mapping</li>
+                    <li>Virtual lipstick application with color customization</li>
+                    <li>Eye makeup effects including eyeshadow and eyeliner</li>
+                    <li>Foundation and blush simulation</li>
+                    <li>Photo capture and sharing functionality</li>
+                    <li>Multiple makeup preset styles</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Image Processing</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Utilized MediaPipe for robust facial landmark detection</li>
+                    <li>Implemented color blending algorithms for realistic makeup application</li>
+                    <li>Optimized for real-time performance with efficient image processing</li>
+                    <li>Created intuitive user interface for easy makeup customization</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/BTANISHA11/beautybuzzz" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/1xp9Mw96GSgudY9dbhxC8lArpdsK8hKz_/edit?usp=sharing&ouid=116714514480289873617&rtpof=true&sd=true" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+      </div>
+     <!-- Modal for InviTree -->
+    <div id="invitree-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('invitree')">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-database"></i>
+                <h2>InviTree</h2>
+                <p style="color: #ccc;">Smart Inventory Management Solution</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>InviTree is a comprehensive inventory management system built with the MERN stack, designed to streamline stock tracking and supply chain operations for businesses of all sizes. The application provides real-time inventory monitoring, automated alerts, and detailed analytics for informed decision-making.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time inventory tracking and monitoring</li>
+                    <li>Automated low-stock alerts and notifications</li>
+                    <li>Supplier management and purchase order generation</li>
+                    <li>Sales tracking and revenue analytics</li>
+                    <li>Multi-location warehouse support</li>
+                    <li>Barcode scanning integration</li>
+                    <li>Comprehensive reporting dashboard</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JWT Auth</span>
+                    <span class="tech-tag">Chart.js</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Designed scalable database schema for efficient inventory operations</li>
+                    <li>Implemented secure user authentication and role-based access control</li>
+                    <li>Created responsive dashboard with real-time data visualization</li>
+                    <li>Integrated automated email notifications for critical inventory levels</li>
+                    <li>Developed RESTful APIs for seamless data management</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/A1Kumari/Inventory-management" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/14aVTMOBJlJS6DlWGbOJMGs60RrISmDGFY65smn1cI8M/edit?tab=t.0" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+     <!-- Modal for Virtual Makeup Try-On -->
+    <div id="freelancePortfolio-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">
+    <h2>Freelance Portfolio</h2>
+    <span class="close" onclick="closeModal('makeup')">&times;</span>
+</div>
+
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>A clean and responsive portfolio website created for a freelance client to showcase their personal brand and work in a visually engaging way. The focus was entirely on layout aesthetics, animations, smooth scrolling, and interactive UI elements built using HTML, CSS, and JavaScript without relying on heavy libraries or frameworks.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Fully responsive design tailored for mobile, tablet, and desktop screens</li>
+
+                     <li>Interactive hover effects, image sliders, and smooth animations</li>
+
+                    <li>Custom-built CSS components like modals, buttons, and cards</li>
+
+                     <li>Seamless navigation with scroll-linked sections and sticky header</li>
+
+                    <li>Styled contact form with validation and integrated email support (optional: via EmailJS)</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">NextJs</span>
+                    <span class="tech-tag">TailwindCSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS</span>
+                    
+                </div>
+            </div>
+            
+            <!-- <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Utilized MediaPipe for robust facial landmark detection</li>
+                    <li>Implemented color blending algorithms for realistic makeup application</li>
+                    <li>Optimized for real-time performance with efficient image processing</li>
+                    <li>Created intuitive user interface for easy makeup customization</li>
+                </ul>
+            </div> -->
+            
+            <div class="modal-links">
+                <a href="https://github.com/BTANISHA11/beautybuzzz" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/1TEFwU6YIhaaYGJdum0fipM-KO7Fliz2xaAnHBcyBs20/edit?tab=t.0#heading=h.4xu482u6z9qd" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+      </div>
+     <!-- Modal for InviTree -->
+    <div id="pack4print-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('invitree')">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-database"></i>
+                <h2>InviTree</h2>
+                <p style="color: #ccc;">Smart Inventory Management Solution</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>InviTree is a comprehensive inventory management system built with the MERN stack, designed to streamline stock tracking and supply chain operations for businesses of all sizes. The application provides real-time inventory monitoring, automated alerts, and detailed analytics for informed decision-making.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time inventory tracking and monitoring</li>
+                    <li>Automated low-stock alerts and notifications</li>
+                    <li>Supplier management and purchase order generation</li>
+                    <li>Sales tracking and revenue analytics</li>
+                    <li>Multi-location warehouse support</li>
+                    <li>Barcode scanning integration</li>
+                    <li>Comprehensive reporting dashboard</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JWT Auth</span>
+                    <span class="tech-tag">Chart.js</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Designed scalable database schema for efficient inventory operations</li>
+                    <li>Implemented secure user authentication and role-based access control</li>
+                    <li>Created responsive dashboard with real-time data visualization</li>
+                    <li>Integrated automated email notifications for critical inventory levels</li>
+                    <li>Developed RESTful APIs for seamless data management</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/A1Kumari/Inventory-management" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/14aVTMOBJlJS6DlWGbOJMGs60RrISmDGFY65smn1cI8M/edit?tab=t.0" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Virtual Makeup Try-On -->
+    <div id="solar-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">
+    <h2>Virtual Makeup Try-On</h2>
+    <span class="close" onclick="closeModal('makeup')">&times;</span>
+</div>
+
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>BeautyBuzz is an innovative virtual makeup application that leverages computer vision and real-time image processing to allow users to try different makeup looks without physically applying products. The application uses advanced facial recognition algorithms to detect facial landmarks and apply makeup effects in real-time.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time face detection and landmark mapping</li>
+                    <li>Virtual lipstick application with color customization</li>
+                    <li>Eye makeup effects including eyeshadow and eyeliner</li>
+                    <li>Foundation and blush simulation</li>
+                    <li>Photo capture and sharing functionality</li>
+                    <li>Multiple makeup preset styles</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Image Processing</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Utilized MediaPipe for robust facial landmark detection</li>
+                    <li>Implemented color blending algorithms for realistic makeup application</li>
+                    <li>Optimized for real-time performance with efficient image processing</li>
+                    <li>Created intuitive user interface for easy makeup customization</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/BTANISHA11/beautybuzzz" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/1TEFwU6YIhaaYGJdum0fipM-KO7Fliz2xaAnHBcyBs20/edit?tab=t.0#heading=h.4xu482u6z9qd" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+      </div>
+     <!-- Modal for InviTree -->
+    <div id="chess-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('invitree')">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-database"></i>
+                <h2>InviTree</h2>
+                <p style="color: #ccc;">Smart Inventory Management Solution</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>InviTree is a comprehensive inventory management system built with the MERN stack, designed to streamline stock tracking and supply chain operations for businesses of all sizes. The application provides real-time inventory monitoring, automated alerts, and detailed analytics for informed decision-making.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time inventory tracking and monitoring</li>
+                    <li>Automated low-stock alerts and notifications</li>
+                    <li>Supplier management and purchase order generation</li>
+                    <li>Sales tracking and revenue analytics</li>
+                    <li>Multi-location warehouse support</li>
+                    <li>Barcode scanning integration</li>
+                    <li>Comprehensive reporting dashboard</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JWT Auth</span>
+                    <span class="tech-tag">Chart.js</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Designed scalable database schema for efficient inventory operations</li>
+                    <li>Implemented secure user authentication and role-based access control</li>
+                    <li>Created responsive dashboard with real-time data visualization</li>
+                    <li>Integrated automated email notifications for critical inventory levels</li>
+                    <li>Developed RESTful APIs for seamless data management</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/A1Kumari/Inventory-management" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/14aVTMOBJlJS6DlWGbOJMGs60RrISmDGFY65smn1cI8M/edit?tab=t.0" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+  <div id="todolist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('invitree')">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-database"></i>
+                <h2>InviTree</h2>
+                <p style="color: #ccc;">Smart Inventory Management Solution</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>InviTree is a comprehensive inventory management system built with the MERN stack, designed to streamline stock tracking and supply chain operations for businesses of all sizes. The application provides real-time inventory monitoring, automated alerts, and detailed analytics for informed decision-making.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time inventory tracking and monitoring</li>
+                    <li>Automated low-stock alerts and notifications</li>
+                    <li>Supplier management and purchase order generation</li>
+                    <li>Sales tracking and revenue analytics</li>
+                    <li>Multi-location warehouse support</li>
+                    <li>Barcode scanning integration</li>
+                    <li>Comprehensive reporting dashboard</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JWT Auth</span>
+                    <span class="tech-tag">Chart.js</span>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Designed scalable database schema for efficient inventory operations</li>
+                    <li>Implemented secure user authentication and role-based access control</li>
+                    <li>Created responsive dashboard with real-time data visualization</li>
+                    <li>Integrated automated email notifications for critical inventory levels</li>
+                    <li>Developed RESTful APIs for seamless data management</li>
+                </ul>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://github.com/A1Kumari/Inventory-management" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://docs.google.com/document/d/14aVTMOBJlJS6DlWGbOJMGs60RrISmDGFY65smn1cI8M/edit?tab=t.0" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+
       </ul>
     </div>
   </div>
 </div>
 
   
-  
+<script>
+        function openModal(projectId) {
+            const modal = document.getElementById(projectId + '-modal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal(projectId) {
+            const modal = document.getElementById(projectId + '-modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal when clicking outside of it
+        window.addEventListener('click', function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+
+        // Add smooth scroll behavior and animation effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.lexal_tm_services li');
+            
+            // Add stagger animation to cards
+            projectCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.animation = 'cardSlideIn 0.6s ease forwards';
+            });
+        });
+
+        // Add CSS animation for card entrance
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes cardSlideIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 
   
 
@@ -365,59 +873,11 @@
       <h3>Check out my major projects</h3>
     </div>
 
-<<<<<<< HEAD
     <div class="projects-container">
       <div class="projects-cards">
         <img src="./img/project/contributed4.png" alt="Rezumer">
         <h3>Rezumer</h3>
         <p>A resume builder application with advanced features.</p>
-=======
-              </div>
-                  </div>
-              </div>
-          </div>
-          <div class="project-image">
-              <img src="./img/project/contributed4.png" alt="Project 2">
-              <div class="overlay2">
-                  <div class="overlay-content">
-                    <div class="overlay">
-                      <h2>Rezumer</h2>
-                      <div class="icons">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        <i class="fa-brands fa-github"></i>
-                      </div>
-              </div>
-                  </div>
-              </div>
-          </div>
-          <div class="project-image">
-            <img src="./img/project/contributed4.png" alt="Project 2">
-            <div class="overlay2">
-                <div class="overlay-content">
-                  <h2>Event Management</h2>
-                  <div class="overlay">
-                    <div class="icons">
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      <i class="fa-brands fa-github"></i>
-                    </div>
-            </div>
-                </div>
-            </div>
-        </div>
-        <div class="project-image">
-          <img src="./img/project/contributed4.png" alt="Project 2">
-          <div class="overlay2">
-              <div class="overlay-content">
-                <div class="overlay">
-                  <h2>Roadmap generator</h2>
-                  <div class="icons">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-          </div>
-              </div>
-          </div>
->>>>>>> f34390ae7009f8aeeb9a50230880b5fbe3a8464b
       </div>
       <div class="projects-cards">
         <img src="./img/project/contributed4.png" alt="Event Management">
